@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: wormhole_checker
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    volumes:
+      - /var/lib/wormhole_checker:/var/lib/wormhole_checker
+    restart: always
