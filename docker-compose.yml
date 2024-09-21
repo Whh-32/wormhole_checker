@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
-  bot:
+  telegram-bot:
     build: .
-    container_name: wormhole_checker
-    environment:
-      - NODE_ENV=production
-    ports:
-      - "3000:3000"
+    container_name: telegram-bot
+    restart: always
     volumes:
       - .:/var/lib/wormhole_checker
-    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
