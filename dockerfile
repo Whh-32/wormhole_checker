@@ -1,8 +1,8 @@
 # Use the official Node.js image
 FROM node:20.17.0
 
-# Create and change to the app directory
-WORKDIR /var/lib/wormhole_checker
+# Set the working directory
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -10,11 +10,11 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of your application code
+# Copy the rest of the application code
 COPY . .
 
-# Expose the port your app runs on
+# Expose the port the app runs on
 EXPOSE 3000
 
-# Command to run your bot
+# Define the command to run the app
 CMD ["npm", "start"]

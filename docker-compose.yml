@@ -1,11 +1,11 @@
+version: '3'
 services:
-  telegram-bot:
+  bot:
     build: .
-    container_name: telegram-bot
-    restart: always
-    volumes:
-      - .:/var/lib/wormhole_checker
     ports:
       - "3000:3000"
     env_file:
       - .env
+    volumes:
+      - .:/usr/src/app
+    restart: always
