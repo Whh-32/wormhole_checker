@@ -9,5 +9,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - /var/lib/wormhole_checker:/var/lib/wormhole_checker
+      - .:/var/lib/wormhole_checker
     restart: always
