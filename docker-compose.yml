@@ -1,4 +1,4 @@
-version: '3'
+version: '2.29.2'
 services:
   bot:
     build: .
@@ -7,5 +7,5 @@ services:
     env_file:
       - .env
     volumes:
-      - .:/usr/src/app
+      - .:/var/lib/wormhole_checker
     restart: always

@@ -2,7 +2,7 @@
 FROM node:20.17.0
 
 # Set the working directory
-WORKDIR /usr/src/app
+WORKDIR /var/lib/wormhole_checker
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
