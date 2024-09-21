@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const { Telegraf, Markup } = require('telegraf');
 const { validateIP } = require('./functions/validateIP')
 const bot = new Telegraf(process.env.BOT_TOKEN);
