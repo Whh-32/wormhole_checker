@@ -7,3 +7,5 @@
   -check realtime domain and ip, when domain or ip address down alarm to you.
  
   -find and set new clear ip address on cloudflare and gcore
+
+  telegram id: https://t.me/wormhole_checker_bot
