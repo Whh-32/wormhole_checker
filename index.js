@@ -20,8 +20,9 @@ const main_menu = async (ctx) => {
                 [Markup.button.callback('پیدا کردن و ست کردن آیپی جدید ⚙️', 'set_ip_or_domain_menu')]
             ]));
         } else {
-            ctx.reply('برای استفاده از ربات لطفا در چنل ما عضو شوید.', Markup.inlineKeyboard([
-                [Markup.button.url('عضویت در کانال', 'https://t.me/wormhole_tunnel')]
+            ctx.reply('برای استفاده از امکانات ربات لطفا در چنل ما عضو شوید.', Markup.inlineKeyboard([
+                [Markup.button.url('عضویت در کانال', 'https://t.me/wormhole_tunnel')],
+                [Markup.button.callback('✅ عضو شدم', 'back_to_main_menu')]
             ]));
         }
     } catch (error) {
