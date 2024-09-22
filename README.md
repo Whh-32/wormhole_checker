@@ -8,4 +8,4 @@
  
   -find and set new clear ip address on cloudflare and gcore
 
-  telegram id: https://t.me/wormhole_checker_bot
+  telegram id: <a href='https://t.me/wormhole_checker_bot'>wormhole_checker</a>
